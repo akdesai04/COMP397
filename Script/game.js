@@ -41,13 +41,13 @@ function Main() {
     }
     function showRandDice(){
         
-        var pos1 = (Math.random() * 6) + 1
+        var pos1 = Math.floor((Math.random() * 6)) + 1
         switch(pos1){
         case 1:
             dice2 = new createjs.Bitmap("./Assets/images/1.png");
             dice2.x = 75;
             dice2.y = 100;
-            stage.addChild(dice1);
+            stage.addChild(dice2);
             break;
         case 2:
             dice2 = new createjs.Bitmap("./Assets/images/2.png");
@@ -83,42 +83,42 @@ function Main() {
 
         }
 
-        var pos2 = (Math.random() * 6) + 1;
+        var pos2 = Math.floor((Math.random() * 6)) + 1;
         switch(pos2){
             case 1:
                 dice1 = new createjs.Bitmap("./Assets/images/1.png");
-                dice1.x = 200;
+                dice1.x = 300;
                 dice1.y = 100;
                 stage.addChild(dice1);
                 break;
             case 2:
                 dice1 = new createjs.Bitmap("./Assets/images/2.png");
-                dice1.x = 200;
+                dice1.x = 300;
                 dice1.y = 100;
                 stage.addChild(dice1);
                 break;
             case 3:
             dice1 = new createjs.Bitmap("./Assets/images/3.png");
-            dice1.x = 200;
+            dice1.x = 300;
             dice1.y = 100;
             stage.addChild(dice1);
             break;
             case 4:
             
             dice1 = new createjs.Bitmap("./Assets/images/4.png");
-            dice1.x = 200;
+            dice1.x = 300;
             dice1.y = 100;
             stage.addChild(dice1);
             break;
             case 5:
             dice1 = new createjs.Bitmap("./Assets/images/5.png");
-            dice1.x = 200;
+            dice1.x = 300;
             dice1.y = 100;
             stage.addChild(dice1);
             break;
             case 6:
             dice1 = new createjs.Bitmap("./Assets/images/6.png");
-            dice1.x = 200;
+            dice1.x = 300;
             dice1.y = 100;
             stage.addChild(dice1);
             break;
